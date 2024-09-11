@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header></header>
+    <section class="category_btns">
+      <div class="container">
+        <div class="top_catalog">
+          <p class="cat_btn" category="popular">Популярное</p>
+          <p class="cat_btn" category="furniture">Кресла</p>
+          <p class="cat_btn" category="PC">Компьютерная техника</p>
+          <p class="cat_btn" category="audio">Аудиотехника</p>
+          <p class="cat_btn" category="TV">Телевизоры</p>
+          <p class="cat_btn" category="kitchen">Техника для кухни</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="main_swap">
+            
+          </div>
+          <div class="swiper-button-next" id="next_card"></div>
+          <div class="swiper-button-prev" id="prev_card"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="part_popular">
+      <div class="container">
+        <div class="popular">
+          <h1 class="title_cat">Популярное</h1>
+          <div class="goods_cards_box" id="popular_products">
+
+          </div>
+          <div class="show_more">
+            <button class="show_more_btn" id="show_more_popular">Показать еще</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
