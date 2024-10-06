@@ -18,3 +18,21 @@ export async function postData(endpoint, body) {
         throw error
     }
 }
+
+export async function putData(endpoint, body) {
+    try {
+        let res = await axios.put(`${apiUrl}/${endpoint}`, body);
+        return res;
+    } catch (error) {
+        throw error;
+    }
+}
+
+export async function patchData(endpoint, body) {
+    try {
+        let res = await axios.patch(`${apiUrl}/${endpoint}`, body);
+        return res;
+    } catch (error) {
+        throw error;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <header></header>
+    
+    <section class="center_sec">
+            <div class="center_box">
+                <img src="/noproduct.svg" alt="">
+                <h1 class="centered_h1">В корзине пока нет товаров</h1>
+                <p class="centered_p">
+                    Начните с подборок на главной странице или найдите нужный товар через поиск
+                </p>
+            </div>
+    </section>
+
+    <section class="korzina_part">
+        <div class="container">
+            <h1 class="title_cat" id="korzina_h1">Корзина товаров</h1>
+            <div class="korzina_body">
+                <div class="korzina_items">
+
+                    <div class="card_korz">
+                        <div class="left_card">
+                            <img src="https://img.mvideo.ru/Big/50138276bb.jpg" alt="">
+                        </div>
+                        <div class="right_card">
+                            <h1 class="title_korzina">Cтиральный порошок Tide, Color Lenor Touch, автомат, 3 кг</h1>
+                            <p class="price_korzina">230 000 сум</p>
+                            <div class="quantity_btn">
+                                <p class="reduce" id="btns_num">-</p>
+                                <p class="number_good">1</p>
+                                <p class="add" id="btns_num">+</p>
+                            </div>
+                            <button class="btn_remove">Удалить</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="total_sum">
+                    <h1 class="price_total">1 650 000 сум</h1>
+                    <p class="num_goods">Итого товаров: <span class="num_items">14</span></p>
+                    <p class="num_disk">Итого скидки: <span class="total_disk">244 000 сум</span></p>
+                    <button class="btn_order">Оформить</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>

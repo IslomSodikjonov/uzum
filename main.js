@@ -54,11 +54,11 @@ getData(`goods`)
         const [type, catalog] = entry.split('|');
         return { type, catalog };
         });
-        console.log(result);
-        reload(result, 'body', createSection)
 
+        reload(result, 'body', createSection)
     })
     .catch(error => console.error(error))
+
 
 getData(`goods`)
     .then(res => {
